@@ -88,4 +88,120 @@ body {
 }
 .header .icons #searchBtn {
   display: none;
+}
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  left: -130%;
+  height: 100%;
+  width: 32rem;
+  background: #fff;
+  z-index: 101;
+}
+.sideBar.active {
+  left: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+}
+.sideBar #closeSideBar {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: #666;
+}
+.sideBar #closeSideBar:hover {
+  transform: rotate(90deg);
+  color: #0984e3;
+}
+.sideBar .user {
+  padding: 2rem;
+  background: #eee;
+  text-align: center;
+}
+.sideBar .user img {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  border: 1rem solid #fff;
+  box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+}
+.sideBar .user h3 {
+  padding: 0.5rem 0;
+  font-size: 1.7rem;
+  color: #666;
+}
+.sideBar .user a {
+  font-size: 1.5rem;
+  color: #0984e3;
+}
+.sideBar .user a:hover {
+  color: #333;
+}
+.sideBar .navBar {
+  padding-top: 1rem;
+}
+.sideBar .navBar a {
+  display: block;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  color: #666;
+}
+.sideBar .navBar a:hover {
+  color: #0984e3;
+}
+.sideBar .navBar a:hover i {
+  padding-right: 2rem;
+}
+.sideBar .navBar i {
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .header .searchForm {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+    height: 6rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .searchForm.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .icons #searchBtn {
+    display: inline-block;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    justify-content: center;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .icons a,
+.header .icons div {
+    margin: 0 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

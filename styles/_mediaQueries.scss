@@ -1,0 +1,54 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    .searchForm {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-radius: 0;
+      box-shadow: $boxShadow;
+      height: 6rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+    .icons {
+      #searchBtn {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .header {
+    justify-content: center;
+
+    .logo {
+      display: none;
+    }
+    .icons {
+      a,
+      div {
+        margin: 0 1rem;
+      }
+    }
+  }
+}

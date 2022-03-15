@@ -1,0 +1,74 @@
+.sideBar {
+  position: fixed;
+  top: 0;
+  left: -130%;
+  height: 100%;
+  width: 32rem;
+  background: $white;
+  z-index: 101;
+  
+
+  &.active{
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.7);
+  }
+
+  #closeSideBar {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 4rem;
+    cursor: pointer;
+    color: $lightColor;
+
+    &:hover {
+      transform: rotate(90deg);
+      color: $blue;
+    }
+  }
+  .user {
+    padding: 2rem;
+    background: $lightBg;
+    text-align: center;
+    img {
+      height: 17rem;
+      width: 17rem;
+      border-radius: 50%;
+      border: 1rem solid $white;
+      box-shadow: $boxShadow;
+      margin-bottom: 0.5rem;
+    }
+    h3 {
+      padding: 0.5rem 0;
+      font-size: 1.7rem;
+      color: $lightColor;
+    }
+
+    a {
+      font-size: 1.5rem;
+      color: $blue;
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+  .navBar {
+    padding-top: 1rem;
+    a {
+      display: block;
+      padding: 1rem 2rem;
+      font-size: 1.7rem;
+      color: $lightColor;
+      &:hover {
+        color: $blue;
+
+        i {
+          padding-right: 2rem;
+        }
+      }
+    }
+    i {
+      padding-right: 0.5rem;
+    }
+  }
+}
