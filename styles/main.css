@@ -30,6 +30,10 @@ body {
   background: #eee;
 }
 
+section, footer {
+  padding: 3rem 10%;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -159,6 +163,60 @@ body {
   padding-right: 0.5rem;
 }
 
+.quickLinks,
+.credit {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #333;
+  justify-content: space-between;
+}
+.quickLinks .logo,
+.credit .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+}
+.quickLinks .logo i,
+.credit .logo i {
+  color: gold;
+}
+.quickLinks .links a,
+.credit .links a {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1.7rem;
+}
+.quickLinks .links a:hover,
+.credit .links a:hover {
+  color: gold;
+}
+.quickLinks .share a,
+.credit .share a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+.quickLinks .share a:hover,
+.credit .share a:hover {
+  color: gold;
+}
+
+.credit {
+  background: #fff;
+}
+.credit p {
+  font-size: 2rem;
+  color: #666;
+}
+.credit p span {
+  color: #0984e3;
+}
+.credit img {
+  height: 4rem;
+  filter: drop-shadow(0 0 0.1rem, #333);
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -166,6 +224,38 @@ body {
 
   .header {
     padding: 2rem;
+  }
+
+  section,
+footer {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 991px) {
+  .quickLinks,
+.credit {
+    flex-flow: column;
+    text-align: center;
+  }
+  .quickLinks .links,
+.credit .links {
+    padding: 1rem 0;
+  }
+  .quickLinks .links a,
+.credit .links a {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+  .quickLinks .share a,
+.credit .share a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 2rem;
+  }
+  .quickLinks .share a:hover,
+.credit .share a:hover {
+    color: gold;
   }
 }
 @media (max-width: 768px) {
