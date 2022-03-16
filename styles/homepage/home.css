@@ -1,0 +1,29 @@
+.home {
+  background: #fff;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.slide .image {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+.slide .image img {
+  height: 30rem;
+}
+.slide .content {
+  flex: 1 1 40rem;
+}
+.slide .content span {
+  font-size: 2rem;
+  color: #0984e3;
+}
+.slide .content h3 {
+  padding-top: 0.5rem;
+  color: #333;
+  font-size: 2rem;
+}/*# sourceMappingURL=home.css.map */

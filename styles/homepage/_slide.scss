@@ -1,0 +1,27 @@
+.slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  .image {
+    flex: 1 1 40rem;
+    text-align: center;
+    img {
+      height: 30rem;
+    }
+  }
+
+  .content {
+    flex: 1 1 40rem;
+    span {
+        font-size: 2rem;
+        color: $blue;
+    }
+    h3 {
+        padding-top: .5rem;
+        color: $black;
+        font-size: 2rem;
+    }
+  }
+}

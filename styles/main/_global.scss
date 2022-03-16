@@ -12,15 +12,6 @@
   transition: all 0.2s linear;
 }
 
-$blue: #0984e3;
-$black: #333;
-$white: #fff;
-$gold: gold;
-$lightColor: #666;
-$lightBg: #eee;
-$border: 0.2rem solid $black;
-$boxShadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
-
 @mixin gris($col) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($col, 1fr));
@@ -49,6 +40,22 @@ body {
   background: $lightBg;
 }
 
-section,footer {
+section,
+footer {
   padding: 3rem 10%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: $white;
+  cursor: pointer;
+  background: $blue;
+
+  &:hover {
+    background: $black;
+  }
 }
