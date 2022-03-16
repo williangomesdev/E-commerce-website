@@ -41,12 +41,13 @@ body {
 }
 
 section,
-footer {
-  padding: 3rem 10%;
+footer,
+.swiper {
+  padding: 3rem 10% !important;
 }
 
 .btn {
-  margin-top: 1rem;
+  margin: 1rem 0;
   display: inline-block;
   border-radius: 0.5rem;
   padding: 1rem 3rem;

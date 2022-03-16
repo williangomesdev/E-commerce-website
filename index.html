@@ -54,9 +54,9 @@
     </div>
 
     <!-- home -->
-    <section class="home">
-        <div class="homeSlider">
-            <div class="slide">
+    <section class="swiper home">
+        <div class="swiper-wrapper homeSlider">
+            <div class="swiper-slide slide">
                 <div class="image">
                     <img src="./assets/images/home-img-1.jpg" alt="Imagem de smartphone que estão em promoção">
                 </div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="slide">
+            <div class="swiper-slide slide">
                 <div class="image">
                     <img src="./assets/images/home-img-2.jpg" alt="Imagem de relógios que estão em promoção">
                 </div>
@@ -78,7 +78,7 @@
                 </div>
             </div>
 
-            <div class="slide">
+            <div class="swiper-slide slide">
                 <div class="image">
                     <img src="./assets/images/home-img-3.jpg" alt="Imagem de headphones que estão em promoção">
                 </div>
@@ -88,11 +88,14 @@
                     <a href="#" class="btn">Compre agora</a>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </section>
     <!-- home -->
-
-
 
     <footer class=" quickLinks">
         <a href="index.html" class="logo"><i class="fas fa-store"></i>Shop</a>
@@ -119,6 +122,7 @@
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/slides.js"></script>
 </body>
 
 </html>

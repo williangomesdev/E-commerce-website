@@ -31,12 +31,13 @@ body {
 }
 
 section,
-footer {
-  padding: 3rem 10%;
+footer,
+.swiper {
+  padding: 3rem 10% !important;
 }
 
 .btn {
-  margin-top: 1rem;
+  margin: 1rem 0;
   display: inline-block;
   border-radius: 0.5rem;
   padding: 1rem 3rem;
@@ -245,6 +246,14 @@ footer {
 footer {
     padding: 3rem 2rem;
   }
+
+  .home .slide {
+    text-align: center;
+  }
+  .home .swiper-button-next,
+.home .swiper-button-prev {
+    display: none;
+  }
 }
 @media (max-width: 991px) {
   .quickLinks,
@@ -308,5 +317,10 @@ footer {
   .header .icons a,
 .header .icons div {
     margin: 0 1rem;
+  }
+
+  .home .slide .image img {
+    height: auto;
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
