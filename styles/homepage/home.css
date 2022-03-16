@@ -2,6 +2,12 @@
   background: #fff;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: #333;
+}
+
 .slide {
   display: flex;
   align-items: center;
@@ -26,9 +32,4 @@
   padding-top: 0.5rem;
   color: #333;
   font-size: 2rem;
-}
-.slide .swiper-button-next:after,
-.slide .swiper-button-prev:after {
-  font-size: 3rem;
-  color: #333;
 }/*# sourceMappingURL=home.css.map */

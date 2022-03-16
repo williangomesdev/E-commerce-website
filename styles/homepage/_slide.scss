@@ -1,3 +1,10 @@
+.swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 3rem;
+    color: $black;
+  }
+
+
 .slide {
   display: flex;
   align-items: center;
@@ -25,9 +32,5 @@
     }
   }
 
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    font-size: 3rem;
-    color: $black;
-  }
+  
 }
