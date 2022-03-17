@@ -55,6 +55,33 @@ footer {
   background: #333;
 }
 
+.heading {
+  text-align: center;
+  margin-botto: 3rem;
+  font-size: 3.5rem;
+  color: #333;
+}
+
+.heading span {
+  color: #0984e3;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -317,6 +344,76 @@ footer {
   padding: .5rem 0;
 }
 
+.arrivals .boxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.arrivals .boxContainer .box {
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background: #fff;
+}
+
+.arrivals .boxContainer .box:hover .image .mainImg {
+  display: none;
+}
+
+.arrivals .boxContainer .box:hover .image .hoverImg {
+  display: inline-block;
+}
+
+.arrivals .boxContainer .box .image img {
+  height: 15rem;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+
+.arrivals .boxContainer .box .image .hoverImg {
+  display: none;
+}
+
+.arrivals .boxContainer .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.arrivals .boxContainer .content .price {
+  padding-top: 1.7rem;
+  font-size: 2 rem;
+  color: #0984e3;
+}
+
+.arrivals .boxContainer .content .price span {
+  font-size: 1.5rem;
+  color: #666;
+  -webkit-text-decoration: line-though;
+          text-decoration: line-though;
+}
+
+.arrivals .boxContainer .content .stars {
+  padding-top: 1.7rem;
+}
+
+.arrivals .boxContainer .content .stars i {
+  font-size: 1.5rem;
+  color: gold;
+}
+
 .quickLinks,
 .credit {
   display: -webkit-box;
@@ -480,6 +577,14 @@ footer {
   .home .slide .image img {
     height: auto;
     width: 100%;
+  }
+  .arrivals .boxContainer .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    gap: 2rem;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

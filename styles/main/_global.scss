@@ -59,3 +59,20 @@ footer {
     background: $black;
   }
 }
+
+.heading {
+  text-align: center;
+  margin-botto: 3rem;
+  font-size: 3.5rem;
+  color: $black;
+  span {
+    color: $blue;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}

@@ -97,12 +97,22 @@
 
   .home {
     .slide {
-      .image{
-        img{
-          height: auto;width: 100%;
+      .image {
+        img {
+          height: auto;
+          width: 100%;
         }
       }
     }
-    }
   }
 
+  .arrivals {
+    .boxContainer {
+      .box {
+        flex-flow: column;
+        gap: 2rem;
+        text-align: center;
+      }
+    }
+  }
+}
