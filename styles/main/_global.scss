@@ -12,7 +12,7 @@
   transition: all 0.2s linear;
 }
 
-@mixin gris($col) {
+@mixin grid($col) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($col, 1fr));
   gap: 2rem;
