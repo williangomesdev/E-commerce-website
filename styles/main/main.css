@@ -456,6 +456,74 @@ footer {
   line-height: 2;
 }
 
+.faq .detailsContainer {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.faq .detailsContainer .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+  background: #fff;
+}
+
+.faq .detailsContainer .details.active summary {
+  background: #0984e3;
+}
+
+.faq .detailsContainer .details.active summary i {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq .detailsContainer .details.active p {
+  display: block;
+}
+
+.faq .detailsContainer .details:last-child {
+  margin-bottom: 0.5rem;
+}
+
+.faq .detailsContainer .details summary {
+  padding: 1.5rem;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  background: #333;
+  cursor: pointer;
+}
+
+.faq .detailsContainer .details p {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  display: none;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+
 .quickLinks,
 .credit {
   display: -webkit-box;

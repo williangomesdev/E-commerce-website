@@ -1,0 +1,52 @@
+.faq {
+  .detailsContainer {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+    .details {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: $boxShadow;
+      background: $white;
+
+      &.active {
+        summary {
+          background: $blue;
+          i {
+            transform: rotate(180deg);
+          }
+        }
+        p {
+          display: block;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0.5rem;
+      }
+      summary {
+        padding: 1.5rem;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        color: $white;
+        background: $black;
+        cursor: pointer;
+      }
+      p {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        line-height: 2;
+        color: $lightColor;
+        display: none;
+        animation: fadeIn 0.2s linear;
+      }
+    }
+  }
+}

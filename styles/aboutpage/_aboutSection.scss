@@ -1,0 +1,30 @@
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    .image {
+      flex: 1 1 42rem;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      flex: 1 1 42rem;
+      padding: 3rem;
+      background: $white;
+      h3 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $black;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $lightColor;
+        line-height: 2;
+      }
+      a {
+      }
+    }
+  }
+  
