@@ -16,3 +16,21 @@ var swiper = new Swiper(".home", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+//Slide reviews
+var swiper = new Swiper(".reviewsSlider", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});

@@ -1,3 +1,4 @@
+//Faq section opne/close element
 let isOpen = document.querySelectorAll(".detailsContainer .details");
 
 isOpen.forEach((details) => {

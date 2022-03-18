@@ -524,6 +524,41 @@ footer {
           animation: fadeIn 0.2s linear;
 }
 
+.review .reviewsSlider .slide {
+  display: block;
+  width: 35rem;
+  padding: 2rem;
+  text-align: center;
+  border: 0.2rem solid #333;
+  -webkit-box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+}
+
+.review .reviewsSlider .slide img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.review .reviewsSlider .slide h3 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: #333;
+}
+
+.review .reviewsSlider .slide span {
+  color: #0984e3;
+  font-size: 1.7rem;
+}
+
+.review .reviewsSlider .slide p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+  padding-top: 1rem;
+}
+
 .quickLinks,
 .credit {
   display: -webkit-box;
