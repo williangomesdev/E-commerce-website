@@ -914,5 +914,8 @@ footer {
     gap: 2rem;
     text-align: center;
   }
+  .productsBanner .boxContainer .box img {
+    opacity: 0.5;
+  }
 }
 /*# sourceMappingURL=main.css.map */
