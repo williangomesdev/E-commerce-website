@@ -559,6 +559,43 @@ footer {
   padding-top: 1rem;
 }
 
+.category .boxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+}
+
+.category .boxContainer .box {
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #333;
+  padding: 2rem;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+}
+
+.category .boxContainer .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.category .boxContainer .box:hover h3 {
+  color: #333;
+}
+
+.category .boxContainer .box img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.category .boxContainer .box h3 {
+  font-size: 1.7rem;
+  color: #0984e3;
+}
+
 .quickLinks,
 .credit {
   display: -webkit-box;
