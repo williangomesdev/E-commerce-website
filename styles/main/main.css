@@ -596,6 +596,99 @@ footer {
   color: #0984e3;
 }
 
+.products .boxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.products .boxContainer .box {
+  padding: 2rem;
+  border: 0.2rem solid #333;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.products .boxContainer .box:hover .image .mainImg {
+  display: none;
+}
+
+.products .boxContainer .box:hover .image .hoverImg {
+  display: inline-block;
+}
+
+.products .boxContainer .box:hover .image .icons {
+  left: 2rem;
+}
+
+.products .boxContainer .box .image {
+  position: relative;
+}
+
+.products .boxContainer .box .image img {
+  height: 25rem;
+  -webkit-animation: fadeIn 0.2s linear;
+          animation: fadeIn 0.2s linear;
+}
+
+.products .boxContainer .box .image .hoverImg {
+  display: none;
+}
+
+.products .boxContainer .box .image .icons {
+  position: absolute;
+  top: 1rem;
+  left: -7rem;
+}
+
+.products .boxContainer .box .image .icons a {
+  display: block;
+  margin-top: 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  border-radius: 50%;
+  color: #fff;
+  background: #333;
+}
+
+.products .boxContainer .box .image .icons a:hover {
+  background: #0984e3;
+}
+
+.products .boxContainer .box .content {
+  background: #eee;
+  padding-top: 1rem;
+}
+
+.products .boxContainer .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.products .boxContainer .box .content .price {
+  font-size: 2.2rem;
+  color: #0984e3;
+}
+
+.products .boxContainer .box .content .price span {
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.products .boxContainer .box .content .stars i {
+  font-size: 1.7rem;
+  color: gold;
+}
+
 .quickLinks,
 .credit {
   display: -webkit-box;
