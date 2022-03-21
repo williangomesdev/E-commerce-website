@@ -909,7 +909,8 @@ footer {
   font-size: 1.6rem;
 }
 
-.login form {
+.login form,
+.register form {
   max-width: 40rem;
   border-radius: 0.5rem;
   padding: 2rem;
@@ -920,21 +921,24 @@ footer {
   margin: 1rem auto;
 }
 
-.login form h3 {
+.login form h3,
+.register form h3 {
   font-size: 2.5rem;
   padding-bottom: 1rem;
   color: #333;
   text-transform: uppercase;
 }
 
-.login form p {
+.login form p,
+.register form p {
   padding-top: 2rem;
   font-size: 1.5rem;
   color: #666;
   text-align: center;
 }
 
-.login form .box {
+.login form .box,
+.register form .box {
   width: 100%;
   padding: 1.2rem 1.4rem;
   border-radius: 0.5rem;
@@ -945,7 +949,8 @@ footer {
   margin: 0.7rem 0;
 }
 
-.login form .remember {
+.login form .remember,
+.register form .remember {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,22 +962,26 @@ footer {
   padding-bottom: 1rem;
 }
 
-.login form .remember label {
+.login form .remember label,
+.register form .remember label {
   font-size: 1.5rem;
   color: #666;
   cursor: pointer;
 }
 
-.login form .btn {
+.login form .btn,
+.register form .btn {
   width: 100%;
   text-align: center;
 }
 
-.login form .btn.link {
+.login form .btn.link,
+.register form .btn.link {
   background: #333;
 }
 
-.login form .btn.link:hover {
+.login form .btn.link:hover,
+.register form .btn.link:hover {
   background: #0984e3;
 }
 
