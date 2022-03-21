@@ -1,0 +1,35 @@
+.newsletter {
+  background: $blue;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  .content {
+    flex: 1 1 42rem;
+    h3 {
+      font-size: 6rem;
+      color: $white;
+    }
+    p {
+      font-size: 2.2rem;
+      color: $white;
+    }
+  }
+  form {
+    flex: 1 1 42rem;
+    background: $white;
+    display: flex;
+    padding: .5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    height: 6rem;
+
+    .email {
+      width: 100%;
+      padding: 0 1.4rem;
+      text-transform: none;
+      color: $lightColor;
+      font-size: 1.6rem;
+    }
+  }
+}

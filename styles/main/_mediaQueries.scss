@@ -74,6 +74,18 @@
       }
     }
   }
+
+  .newsletter{
+    text-align: center;
+    .content{
+      h3{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 1.7rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 450px) {
