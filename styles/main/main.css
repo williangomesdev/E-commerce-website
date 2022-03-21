@@ -742,6 +742,47 @@ footer {
   color: #333;
 }
 
+.infoContainer .boxContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.infoContainer .boxContainer .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  border: 0.2rem solid #333;
+  -webkit-box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5 1rem rgba(0, 0, 0, 0.2);
+}
+
+.infoContainer .boxContainer .box i {
+  height: 7.5rem;
+  width: 7.5rem;
+  line-height: 7.5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  background: #0984e3;
+  color: #fff;
+}
+
+.infoContainer .boxContainer .box h3 {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+  color: #333;
+}
+
+.infoContainer .boxContainer .box p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #666;
+}
+
 .quickLinks,
 .credit {
   display: -webkit-box;
