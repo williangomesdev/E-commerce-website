@@ -1,33 +1,55 @@
-.infoContainer {
-  .boxContainer {
-    @include grid(31rem);
-    .box {
-      background: $white;
-      border-radius: 0.5rem;
-      text-align: center;
-      padding: 2rem;
-      border: $border;
-      box-shadow: $boxShadow;
-      i {
-        height: 7.5rem;
-        width: 7.5rem;
-        line-height: 7.5rem;
-        font-size: 2.5rem;
-        border-radius: 50%;
-        margin-bottom: 0.5rem;
-        background: $blue;
-        color: $white;
-      }
-      h3 {
-        font-size: 2rem;
-        padding: 0.5rem 0;
-        color: $black;
-      }
-      p {
-        font-size: 1.5rem;
-        line-height: 2;
-        color: $lightColor;
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  form {
+    flex: 1 1 42rem;
+    h3 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: $black;
+      padding-bottom: 1rem;
+    }
+    p {
+      font-size: 1.5rem;
+      color: $lightColor;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+    .inputBox {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: .5rem;
+
+      input {
+        width: 100%;
       }
     }
+
+    .inputBox input,
+    textarea {
+      padding: 1.2rem 1.4rem;
+      border-radius: 0.5rem;
+      border: $border;
+      box-shadow: $boxShadow;
+      background: $white;
+      text-transform: none;
+      color: $lightColor;
+      font-size: 1.7rem;
+      margin: 0.7rem 0;
+    }
+
+    textarea{
+      width: 100%;
+      height: 15rem;
+      resize: none;
+    }
+  }
+
+  .map {
+    flex: 1 1 42rem;
+    width: 100%;
+    border: $border;
   }
 }
