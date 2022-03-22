@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<%- include('/partials/head')%>
+
+    <body>
+        <%- include('/partials/header')%>
+            <%- include('/partials/sideBar')%>
+
+                <section class="register">
+                    <form action="">
+                        <h3>Cadastre-se agora</h3>
+                        <input type="text" name="" placeholder="Seu nome" id="" class="box">
+                        <input type="text" name="" placeholder="Seu email" id="" class="box">
+                        <input type="password" name="" placeholder="Sua senha" id="" class="box">
+                        <input type="password" name="" placeholder="Confirmar senha" id="" class="box">
+                        <input type="submit" value="Confirmar cadastro" class="btn">
+                        <p>Ja tem uma conta?</p>
+                        <a class="btn link" href="./login">Logar agora</a>
+                    </form>
+                </section>
+
+                <%- include('/partials/footer')%>
+                    <%- include('/partials/scripts')%>
+    </body>
+
+</html>
