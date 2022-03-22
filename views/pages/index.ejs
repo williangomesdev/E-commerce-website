@@ -1,232 +1,200 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<%- include ('../partials/head')%>
+    <body>
+        <%- include ('../partials/header')%>
+            <%- include ('../partials/sideBar')%>
+                <!-- home -->
+                <section class="swiper home">
+                    <div class="swiper-wrapper homeSlider">
+                        <div class="swiper-slide slide">
+                            <div class="image">
+                                <img src="./assets/images/home-img-1.jpg"
+                                    alt="Imagem de smartphone que estão em promoção">
+                            </div>
+                            <div class="content">
+                                <span>até S0% de desconto</span>
+                                <h3>smartphones</h3>
+                                <a href="#" class="btn">Compre agora</a>
+                            </div>
+                        </div>
 
-<body>
-    <header class="header">
-        <a href="index.html" class="logo"><i class="fas fa-store"></i> Shop</a>
+                        <div class="swiper-slide slide">
+                            <div class="image">
+                                <img src="./assets/images/home-img-2.jpg"
+                                    alt="Imagem de relógios que estão em promoção">
+                            </div>
+                            <div class="content">
+                                <span>até S0% de desconto</span>
+                                <h3>relógios</h3>
+                                <a href="#" class="btn">Compre agora</a>
+                            </div>
+                        </div>
 
-        <form action="" class="searchForm">
-            <input type="search" id="searchBox" placeholder="Pesquise aqui...">
-            <label for="searchBox" class="fas fa-search"></label>
-        </form>
+                        <div class="swiper-slide slide">
+                            <div class="image">
+                                <img src="./assets/images/home-img-3.jpg"
+                                    alt="Imagem de headphones que estão em promoção">
+                            </div>
+                            <div class="content">
+                                <span>até S0% de desconto</span>
+                                <h3>headphones</h3>
+                                <a href="#" class="btn">Compre agora</a>
+                            </div>
+                        </div>
 
-        <div class="icons">
-            <div class="fas fa-bars" id="menuBtn"></div>
-            <div class="fas fa-search" id="searchBtn"></div>
-            <a href="./pages/login.html" class="fas fa-user"></a>
-            <a href="#" class="fas fa-heart"></a>
-            <a href="./pages/cart.html" class="fas fa-shopping-cart"></a>
-        </div>
-    </header>
-
-    <div class="sideBar">
-
-        <div class="fas fa-times" id="closeSideBar"></div>
-
-        <div class="user">
-            <img src="./assets/images/user-img.png" alt="Imagem usuário">
-            <h3>Usuário</h3>
-            <a href="#">Sair</a>
-        </div>
-
-        <nav class="navBar">
-            <a href="./index.html"><i class="fas fa-angle-right"></i> Home</a>
-            <a href="./pages/about.html"><i class="fas fa-angle-right"></i> Sobre</a>
-            <a href="./pages/products.html"><i class="fas fa-angle-right"></i> Produtos</a>
-            <a href="./pages/contact.html"><i class="fas fa-angle-right"></i> Contato</a>
-            <a href="./pages/login.html"><i class="fas fa-angle-right"></i> Login</a>
-            <a href="./pages/register.html"><i class="fas fa-angle-right"></i> Registre-se</a>
-            <a href="./pages/cart.html"><i class="fas fa-angle-right"></i> Carrinho</a>
-
-        </nav>
-    </div>
-
-    <!-- home -->
-    <section class="swiper home">
-        <div class="swiper-wrapper homeSlider">
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="./assets/images/home-img-1.jpg" alt="Imagem de smartphone que estão em promoção">
-                </div>
-                <div class="content">
-                    <span>até S0% de desconto</span>
-                    <h3>smartphones</h3>
-                    <a href="#" class="btn">Compre agora</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="./assets/images/home-img-2.jpg" alt="Imagem de relógios que estão em promoção">
-                </div>
-                <div class="content">
-                    <span>até S0% de desconto</span>
-                    <h3>relógios</h3>
-                    <a href="#" class="btn">Compre agora</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide slide">
-                <div class="image">
-                    <img src="./assets/images/home-img-3.jpg" alt="Imagem de headphones que estão em promoção">
-                </div>
-                <div class="content">
-                    <span>até S0% de desconto</span>
-                    <h3>headphones</h3>
-                    <a href="#" class="btn">Compre agora</a>
-                </div>
-            </div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </section>
-    <!-- home -->
-    <!-- banner -->
-    <section class="banner">
-        <div class="boxContainer">
-            <a href="#" class="box">
-                <img src="./assets/images/banner-1.jpg" alt="">
-                <div class="content">
-                    <span>Oferta especial</span>
-                    <h3>Até 50% de desconto</h3>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="./assets/images/banner-2.jpg" alt="">
-                <div class="content">
-                    <span>Oferta especial</span>
-                    <h3>Até 50% de desconto</h3>
-                </div>
-            </a>
-
-            <a href="#" class="box">
-                <img src="./assets/images/banner-3.jpg" alt="">
-                <div class="content">
-                    <span>Oferta especial</span>
-                    <h3>Até 50% de desconto</h3>
-                </div>
-            </a>
-        </div>
-    
-    </section>
-    <!-- banner -->
-    <!-- arrivals -->
-    <section class="arrivals">
-        <h1 class="heading">Novos <span>Produtos</span></h1>
-        <div class="boxContainer">
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/arrival-1.jpg" class="mainImg" alt="">
-                    <img src="./assets/images/arrival-1-hover.jpg" class="hoverImg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Produto</h3>
-                    <div class="price">$000 <span>$000</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
                     </div>
-                </div>
-            </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </section>
+                <!-- home -->
+                <!-- banner -->
+                <section class="banner">
+                    <div class="boxContainer">
+                        <a href="#" class="box">
+                            <img src="./assets/images/banner-1.jpg" alt="">
+                            <div class="content">
+                                <span>Oferta especial</span>
+                                <h3>Até 50% de desconto</h3>
+                            </div>
+                        </a>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/arrival-2.jpg" class="mainImg" alt="">
-                    <img src="./assets/images/arrival-2-hover.jpg" class="hoverImg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Produto</h3>
-                    <div class="price">$000 <span>$000</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
+                        <a href="#" class="box">
+                            <img src="./assets/images/banner-2.jpg" alt="">
+                            <div class="content">
+                                <span>Oferta especial</span>
+                                <h3>Até 50% de desconto</h3>
+                            </div>
+                        </a>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/arrival-3.jpg" class="mainImg" alt="">
-                    <img src="./assets/images/arrival-3-hover.jpg" class="hoverImg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Produto</h3>
-                    <div class="price">$000 <span>$000</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <a href="#" class="box">
+                            <img src="./assets/images/banner-3.jpg" alt="">
+                            <div class="content">
+                                <span>Oferta especial</span>
+                                <h3>Até 50% de desconto</h3>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/arrival-4.jpg" class="mainImg" alt="">
-                    <img src="./assets/images/arrival-4-hover.jpg" class="hoverImg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Produto</h3>
-                    <div class="price">$000 <span>$000</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
+                </section>
+                <!-- banner -->
+                <!-- arrivals -->
+                <section class="arrivals">
+                    <h1 class="heading">Novos <span>Produtos</span></h1>
+                    <div class="boxContainer">
+                        <div class="box">
+                            <div class="image">
+                                <img src="./assets/images/arrival-1.jpg" class="mainImg" alt="">
+                                <img src="./assets/images/arrival-1-hover.jpg" class="hoverImg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Produto</h3>
+                                <div class="price">$000 <span>$000</span></div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/arrival-5.jpg" class="mainImg" alt="">
-                    <img src="./assets/images/arrival-5-hover.jpg" class="hoverImg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Produto</h3>
-                    <div class="price">$000 <span>$000</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-            </div>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./assets/images/arrival-2.jpg" class="mainImg" alt="">
+                                <img src="./assets/images/arrival-2-hover.jpg" class="hoverImg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Produto</h3>
+                                <div class="price">$000 <span>$000</span></div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/images/arrival-6.jpg" class="mainImg" alt="">
-                    <img src="./assets/images/arrival-6-hover.jpg" class="hoverImg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Produto</h3>
-                    <div class="price">$000 <span>$000</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
+                        <div class="box">
+                            <div class="image">
+                                <img src="./assets/images/arrival-3.jpg" class="mainImg" alt="">
+                                <img src="./assets/images/arrival-3-hover.jpg" class="hoverImg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Produto</h3>
+                                <div class="price">$000 <span>$000</span></div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image">
+                                <img src="./assets/images/arrival-4.jpg" class="mainImg" alt="">
+                                <img src="./assets/images/arrival-4-hover.jpg" class="hoverImg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Produto</h3>
+                                <div class="price">$000 <span>$000</span></div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image">
+                                <img src="./assets/images/arrival-5.jpg" class="mainImg" alt="">
+                                <img src="./assets/images/arrival-5-hover.jpg" class="hoverImg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Produto</h3>
+                                <div class="price">$000 <span>$000</span></div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="image">
+                                <img src="./assets/images/arrival-6.jpg" class="mainImg" alt="">
+                                <img src="./assets/images/arrival-6-hover.jpg" class="hoverImg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Produto</h3>
+                                <div class="price">$000 <span>$000</span></div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- arrivals -->
-</body>
+                </section>
+                <!-- arrivals -->
+                <%- include ('../partials/footer')%>
+                <%- include ('../partials/scripts')%>
+    </body>
 
 </html>
