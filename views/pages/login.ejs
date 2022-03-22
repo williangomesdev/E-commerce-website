@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+            <%- include('../partials/sideBar')%>
+
+    <!-- login -->
+    <section class="login">
+        <form action="">
+            <h3>Entre agora</h3>
+            <input type="text" name="" placeholder="Seu email" id="" class="box">
+            <input type="password" name="" placeholder="Sua senha" id="" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="rememberMe">
+                <label for="rememberMe">Lembra-me</label>
+            </div>
+            <input type="submit" value="logar agora" class="btn">
+            <p>Não tem nenhuma conta?</p>
+            <a class="btn link" href="./register.html">cadastrar agora</a>
+        </form>
+    </section>
+    <!-- login -->
+
+    <%- include('../partials/footer')%>
+    <%- include('../partials/scripts')%>
+</body>
+
+</html>

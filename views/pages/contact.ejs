@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include('../partials/head')%>
+
+    <body>
+        <%- include('../partials/header')%>
+            <%- include('../partials/sideBar')%>
+
+                <!-- contactInfo -->
+                <section class="infoContainer">
+                    <div class="boxContainer">
+                        <div class="box">
+                            <i class="fas fa-map"></i>
+                            <h3>Endereço</h3>
+                            <p>Rua, bairro cidade estado CEP</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fas fa-envelope"></i>
+                            <h3>email</h3>
+                            <p>email@email.com.</p>
+                            <p>email2@email.com.</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fas fa-phone"></i>
+                            <h3>Telefone</h3>
+                            <p>(99)9999-9999</p>
+                            <p>(11)1111-1111</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- contactInfo -->
+                <!-- contact -->
+                <section class="contact">
+                    <form action="">
+                        <h3>entre em contato</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem praesentium, rerum corporis quia
+                            fugit
+                            cupiditate exercitationem commodi iusto blanditiis odio!</p>
+                        <div class="inputBox">
+                            <input type="text" placeholder="seu nome">
+                            <input type="email" placeholder="seu E-mail">
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="number" placeholder="Telefone...">
+                        </div>
+
+                        <textarea placeholder="Sua mensagem"></textarea>
+                        <input type="submit" class="btn" value="Enviar mensagem">
+                    </form>
+
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.7824034888804!2d-49.25834908481767!3d-25.412093338409417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce425b568bb5d%3A0x6c38ea828457ca72!2sHospital%20S%C3%A3o%20Lucas%20-%20Casar%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1647841345120!5m2!1spt-BR!2sbr"
+                        allowfullscreen="" loading="lazy"></iframe>
+
+                </section>
+                <!-- contact -->
+                <!-- newsletter -->
+                <section class="newsletter">
+                    <div class="content">
+                        <h3>Newsletter</h3>
+                        <p>Inscreva-se para amis atualizações</p>
+                    </div>
+                    <form action="">
+                        <input type="email" placeholder="seu email..." class="email">
+                        <input type="submit" value="Inscreva-se" class="btn">
+                    </form>
+                </section>
+                <!-- newsletter -->
+                <%- include('../partials/footer')%>
+                    <%- include('../partials/scripts')%>
+
+    </body>
+
+</html>
